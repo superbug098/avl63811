@@ -17,7 +17,7 @@ dvb-core-objs += linuxdvb/dvb_ringbuffer.o linuxdvb/dvb_math.o
 #dvb-core-objs += linuxdvb/dvb_filter.o
 
 
-dvb-usb-objs += linuxdvb/dvb-usb-firmware.o linuxdvb/dvb-usb-init.o linuxdvb/dvb-usb-urb.o 
+dvb-usb-objs += linuxdvb/dvb-usb-init.o linuxdvb/dvb-usb-urb.o 
 dvb-usb-objs += linuxdvb/dvb-usb-i2c.o linuxdvb/dvb-usb-dvb.o linuxdvb/dvb-usb-remote.o linuxdvb/usb-urb.o
 obj-m += dvb-usb.o
 
