@@ -16,7 +16,9 @@ dvb-core-objs += linuxdvb/dvb_ringbuffer.o linuxdvb/dvb_math.o
 #linux kernel version <= 4.10.0
 #dvb-core-objs += linuxdvb/dvb_filter.o
 
+obj-m += dvb-core.o
 
+dvb-usb-objs += linuxdvb/dvb-usb-firmware.o linuxdvb/dvb-usb-init.o linuxdvb/dvb-usb-urb.o 
 dvb-usb-objs += linuxdvb/dvb-usb-i2c.o linuxdvb/dvb-usb-dvb.o linuxdvb/dvb-usb-remote.o linuxdvb/usb-urb.o
 obj-m += dvb-usb.o
 
@@ -82,4 +84,3 @@ clean:
 	rm -rf .tmp_versions/
 	rm linuxdvb/*.o linuxdvb/.*.cmd
 							  
-
