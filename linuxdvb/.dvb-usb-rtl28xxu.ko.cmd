@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/dvb-usb-v2/dvb-usb-rtl28xxu.ko := ld.lld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o drivers/media/usb/dvb-usb-v2/dvb-usb-rtl28xxu.ko drivers/media/usb/dvb-usb-v2/dvb-usb-rtl28xxu.o drivers/media/usb/dvb-usb-v2/dvb-usb-rtl28xxu.mod.o;  make -f ./arch/arm64/Makefile.postlink drivers/media/usb/dvb-usb-v2/dvb-usb-rtl28xxu.ko
